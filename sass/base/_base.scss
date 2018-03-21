@@ -16,6 +16,19 @@ Grey dark 3: #999
 
 */
 
+
+
+
+
+$bp-largest: 75em; //break point: 1200/16px = 75em;
+$bp-large: 68.75em; //break point: 1100/16px = 68.75em;
+$bp-medium: 56.25em; //break point: 900/16px = 56.25em;
+$bp-small: 37.5em; //break point: 600/16px = 37.5em;
+
+
+
+
+
 :root{
     --color-primary: #eb2f64;
     --color-primary-light: #FF3366;
@@ -64,4 +77,8 @@ body {
 html {
     box-sizing: border-box;
     font-size: 62.5%; //this is so that 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%; //this is so that 1rem = 8px, 8px/16px = 50%
+    }
 }

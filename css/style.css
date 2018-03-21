@@ -52,6 +52,9 @@ body {
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 .container {
   max-width: 120rem;
@@ -59,6 +62,11 @@ html {
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
 
 .header {
   height: 7rem;
@@ -70,6 +78,9 @@ html {
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
@@ -77,6 +88,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .sidebar {
+      flex-direction: row; } }
 
 .hotel-view {
   background-color: #fff;
@@ -88,6 +102,12 @@ html {
   padding: 4.5rem;
   background-color: var(--color-gray-light-1);
   border-bottom: var(--line); }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 1.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   font-size: 1.4rem;
@@ -96,6 +116,14 @@ html {
   flex: 0 0 60%;
   margin-right: 4.5rem;
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      margin-right: 1.5rem;
+      padding: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 2rem; } }
 
 .user-reviews {
   flex: 1;
@@ -186,10 +214,21 @@ html {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      display: flex;
+      margin-top: 0;
+      width: 100%; } }
   .side-nav__item {
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 0 0 25%; } }
     .side-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .side-nav__item:not(:last-child) {
+          margin-bottom: 0; } }
   .side-nav__item::before {
     content: "";
     position: absolute;
@@ -215,6 +254,9 @@ html {
     align-items: center;
     position: relative;
     z-index: 10; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -226,6 +268,10 @@ html {
   text-align: center;
   padding: 2.5rem;
   color: var(--color-grey-light-4); }
+  @media only screen and (max-width: 56.25em) {
+    .legal {
+      display: none;
+      padding: 0; } }
 
 .gallery {
   display: flex; }
@@ -352,6 +398,8 @@ html {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     height: 4rem;
     width: 4rem;
@@ -360,6 +408,9 @@ html {
     box-sizing: content-box; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+      @media only screen and (max-width: 68.75em) {
+        .recommend__photo:not(:last-child) {
+          margin-right: -2rem; } }
 
 .review {
   background-color: #fff;
@@ -407,6 +458,9 @@ html {
 .cta {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2rem 0; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
@@ -423,7 +477,8 @@ html {
   color: #fff;
   position: relative;
   overflow: hidden;
-  transition: all .2s; }
+  transition: all .2s;
+  cursor: pointer; }
   .btn__visible {
     display: inline-block;
     padding: 2rem 7.5rem;
