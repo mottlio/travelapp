@@ -152,6 +152,8 @@
         @media only screen and (max-width: $bp-medium){
             flex: 0 0 25%;
         }
+        
+        
 
         &:not(:last-child) {
             margin-bottom: .5rem;
@@ -176,6 +178,7 @@
                     width .4s cubic-bezier(1,0,0,1) .2s,
                     background-color .3s;
 
+        
     }
 //memorize these bizarre selectors :/
     &__item:hover::before,
@@ -204,6 +207,13 @@
         @media only screen and (max-width: $bp-medium){
             justify-content: center;
         }
+
+        @media only screen and (max-width: $bp-small){
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1.2rem;
+            padding: 1rem 1.5rem;
+        }
     }
 
 
@@ -212,6 +222,10 @@
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and (max-width: $bp-small){
+            margin-right: 0;
+        }
     }
 
     &__text{}
@@ -281,6 +295,11 @@
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
 
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.8rem;
+            padding: 1rem 1rem;
+        }
+
     }
     &__stars{
         //using flex:1 on stars moves all the rest to the right BUT the element is now very long - not optimal (for hover for example)
@@ -311,6 +330,10 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        @media only screen and (max-width: $bp-small){
+            padding: 0 1rem;
+        }
     }
 
     &__icon-star,
@@ -318,12 +341,23 @@
         width: 1.75rem;
         height: 1.75rem;
         fill: var(--color-primary);
+
+        @media only screen and (max-width: $bp-small){
+            width: 1.25rem;
+            height: 1.25rem;  
+        }
+        
     }
 
     &__rating-average{
         font-size: 2.25rem;
         font-weight: 300;
         margin-bottom: -3px;
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.8rem; 
+        }
+        
     }
 
     &__rating-count{

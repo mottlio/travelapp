@@ -24,6 +24,7 @@ $bp-largest: 75em; //break point: 1200/16px = 75em;
 $bp-large: 68.75em; //break point: 1100/16px = 68.75em;
 $bp-medium: 56.25em; //break point: 900/16px = 56.25em;
 $bp-small: 37.5em; //break point: 600/16px = 37.5em;
+$bp-xsmall: 31.25em; //break point: 500/16px = 31.25em;
 
 
 
@@ -69,8 +70,6 @@ body {
     background-size: cover;
     // so that the body appears only once on the screen
     background-repeat: no-repeat;
-
-    min-height: 100vh;
 
 }
 
