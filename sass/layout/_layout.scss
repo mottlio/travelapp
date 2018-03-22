@@ -102,3 +102,65 @@
     flex-direction: column;
     align-items: center;
 }
+
+
+/*
+.chat{
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    padding: 1rem;
+    height: 25vh;
+    width: 40rem;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 5px;
+    z-index: 20;
+
+
+    &__form{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        //flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    &__input{
+        border-radius: 7px;
+        background-color: rgba(white, .65);
+        border: none;
+        height: 100%;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 100;
+        padding: 1rem;
+        flex: 0 0 75%;
+        box-shadow: var(--shadow-dark);
+    }
+
+    &__icon-send{
+        width: 2.75rem;
+        height: 2.75rem;
+        fill: rgba(white, .65);
+        
+    }
+
+    &__btn{
+        flex: 0 0 25%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+    }
+
+    &__btn:hover{
+        outline: none;
+        cursor: pointer;
+    }
+    
+    &__btn:hover &__icon-send{
+        fill: var(--color-primary);
+    }
+}
+
+*/

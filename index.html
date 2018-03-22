@@ -23,17 +23,46 @@
                     </button>
                 </form>
                 <nav class="user-nav">
-                    <div class="user-nav__icon-box">
+                    <div class="user-nav__icon-box user-nav__icon-box--bookmark">
                         <svg class="user-nav__icon">
                             <use xlink:href="img/sprite.svg#icon-bookmark"></use>
                         </svg>
                         <span class="user-nav__notification">7</span>
                     </div>
-                    <div class="user-nav__icon-box">
+                    
+                    
+                    <div class="user-nav__icon-box chat-icon">
                         <svg class="user-nav__icon">
                             <use xlink:href="img/sprite.svg#icon-chat"></use>
                         </svg>
                         <span class="user-nav__notification">13</span>
+
+
+
+
+
+
+                        <div class="chat-icon__chat">
+                                <form action="#" class="chat-icon__chat__form">
+                                    <!--input type="text" class="chat__input" placeholder="How can we help?"-->
+                                    <textarea name="textarea" cols="30" rows="5" class="chat-icon__chat__input" placeholder="How can we help?"></textarea>
+                                    <button class="chat-icon__chat__btn">
+                                        <svg class="chat-icon__chat__icon-send">
+                                            <use xlink:href="img/sprite2.svg#icon-forward"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+
+
+
+
+
+
+
+
+
+
                     </div>
                     <div class="user-nav__user">
                         <img src="img/user-1.jpg" alt="User photo" class="user-nav__user-photo">
@@ -201,5 +230,6 @@
                 </main>
             </div>
         </div>
+        
     </body>
 </html>
