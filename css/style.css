@@ -258,12 +258,32 @@ html {
     align-items: center; }
   .user-nav > *:hover {
     background-color: var(--color-grey-light-2); }
+  .user-nav__user-options {
+    display: flex;
+    padding: 0;
+    margin-right: -16rem;
+    opacity: 0;
+    transition: all 1s; }
   .user-nav__icon-box {
     position: relative; }
+  .user-nav__options-icon-box {
+    background: var(--color-grey-dark-3);
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .user-nav__options-icon-box:not(:last-child) {
+      border-right: 1px solid var(--color-grey-dark-2); }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem;
     fill: var(--color-grey-dark-2); }
+  .user-nav__options-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: black; }
   .user-nav__notification {
     font-size: .8rem;
     height: 1.75rem;
@@ -280,6 +300,9 @@ html {
   @media only screen and (max-width: 31.25em) {
     .user-nav__user {
       margin-right: 2rem; } }
+  .user-nav__user:hover + .user-nav__user-options {
+    margin-right: 0;
+    opacity: 1; }
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%;

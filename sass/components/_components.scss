@@ -97,8 +97,32 @@
     background-color:  var(--color-grey-light-2);
 }
 
+    &__user-options{
+        display: flex;
+        padding: 0;
+        margin-right: -16rem;
+        opacity: 0;
+        transition: all 1s;
+
+    }
+    
+
     &__icon-box{
         position: relative;
+    }
+
+    &__options-icon-box{
+        background: var(--color-grey-dark-3);
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:not(:last-child){
+            border-right: 1px solid var(--color-grey-dark-2);
+        }
     }
 
    /* &__icon-box--chat:hover .chat{
@@ -111,6 +135,12 @@
         width: 2.25rem;
         fill: var(--color-grey-dark-2);
         
+    }
+
+    &__options-icon{
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: black;
     }
 
     &__notification{
@@ -132,6 +162,12 @@
         @media only screen and (max-width: $bp-xsmall){
             margin-right: 2rem;
         }
+
+    }
+
+   &__user:hover + &__user-options{
+        margin-right: 0;
+        opacity: 1
     }
 
     &__user-photo{
@@ -240,6 +276,7 @@
             margin-right: 0;
         }
     }
+
 
     &__text{}
 
