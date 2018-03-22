@@ -16,6 +16,12 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-xsmall){
+        //by setting flex order to 1 (all the others have 0) I'm pushing it all the way to the right of the flex container
+        order:1;
+        flex: 0 0 90%;
+    }
+
     &__input{
         font-family: inherit;
         font-size: inherit;
@@ -118,7 +124,9 @@
     }
 
     &__user{
-
+        @media only screen and (max-width: $bp-xsmall){
+            margin-right: 2rem;
+        }
     }
 
     &__user-photo{
